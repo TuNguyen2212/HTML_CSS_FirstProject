@@ -1,0 +1,243 @@
+.frontpage{
+    display: grid;
+    width: 100vw;
+    height: 1500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 12fr 1fr;
+    grid-template-areas: 
+    "hd"
+    "ct"
+    "ft";
+    background-color: rgba(128, 128, 128, 0.136);
+}
+@media(max-width:800px){
+.frontpage{
+    display: grid;
+    width: 100vw;
+    height: 1500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 24fr 1fr;
+    grid-template-areas: 
+    "hd"
+    "ct"
+    "ft";
+}
+}
+
+/*Header*/
+.header{
+    display : grid;
+    width : 100%;
+    height: 100px;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "lg bar bar bar bar bar in"
+    "lg one two three four five in";
+    text-align: center;
+    background: white;
+}
+
+#logo{
+    grid-area: lg;
+    background-image: url('Screenshot_20221113_103655.png');
+    background-size : contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#searchbar{
+    grid-area: bar;
+}
+#one{
+    grid-area: one;
+}
+#two{
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#four{
+    grid-area: four;
+}
+#five{
+    grid-area: five;
+}
+#login{
+    grid-area:in;
+}
+.choice{
+    text-size-adjust: auto;
+}
+
+
+/*Body*/
+.body{
+    display : grid;
+    grid-template-rows: 1fr 1.5fr;
+    grid-template-areas:
+    "notice"
+    "otherpro";
+    width: 80%;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+/*phan quang cao cua trang*/
+.notice{
+    grid-area: notice;
+    display: grid;
+    grid-template-areas:
+    "one two";
+    grid-template-columns: 49%;
+    column-gap: 2%;
+}
+@media(max-width:800px){
+    .notice{
+        grid-area: notice;
+        display: grid;
+        grid-template-areas:
+        "one"
+        "two";
+        row-gap: 20px;
+    }
+}
+.one{
+    grid-area:one;
+    background-image: url('image_notice1.jpg');
+    background-size:cover ;
+}
+.two{
+    grid-area:two;
+}
+
+
+
+
+
+
+/*san pham*/
+.product{
+    grid-area: otherpro;
+    display: grid;
+    grid-template-areas:
+    "tr tr tr tr tr tr tr"
+    "on tw th fo fi si se";
+    grid-template-columns: 12%;
+    column-gap: 2%;
+    grid-template-rows: 25% 75%;
+}
+@media(max-width:800px){
+    .other{
+        grid-area: otherpro;
+        display: grid;
+        grid-template-areas:
+        "tr tr tr tr"
+        "on tw th fo"
+        "fi si se ei";
+        grid-template-columns: 23.5%;
+        column-gap: 2%;
+        grid-template-rows: 14% 43% 43%;
+    }
+}
+#today{
+    grid-area:tr;
+    color: red;
+}
+#prone{
+    grid-area:on;
+}
+#prtwo{
+    grid-area:tw;
+}
+#prthree{
+    grid-area:th;
+}
+#prfour{
+    grid-area:fo;
+}
+#prfive{
+    grid-area:fi;
+}
+#prsix{
+    grid-area:si;
+}
+#prseven{
+    grid-area:se;
+}
+.buybutton{
+    align-self: center;
+    size: 20px;
+}
+
+
+
+
+/*Footer*/
+.footer{
+    font-size: medium;
+    display: grid;
+    width: 1fr;
+    height: 1fr;
+    padding: 20px 80px;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "kh kh vct vct ht ht th th"
+    "kh kh vct vct ht ht dv kn"
+    "sau sau sau sau sau sau sau sau";
+    background: white;
+}
+.kh{
+    grid-area: kh;
+}
+.vct{
+    grid-area: vct;
+}
+.ht{
+    grid-area: ht;
+}
+.th{
+    grid-area: th;
+}
+.dv{
+    grid-area: dv;
+}
+.kn{
+    grid-area: kn;
+}
+.sau{
+    grid-area: sau;
+}
+.box{
+    width: auto;
+    height: auto;
+}
+.logo img
+{
+    border-radius: 50%;
+    max-width: 30px;
+    max-height: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.lg img
+{
+    border-radius: 30%;
+    max-width: 40px;
+    max-height: 40px;
+    margin: 5px;
+}
+.lgdv img
+{
+    border-radius: 30%;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 5px;
+}

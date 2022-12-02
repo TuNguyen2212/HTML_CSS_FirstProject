@@ -1,0 +1,191 @@
+.sf{
+    display: grid;
+    width: 100%;
+    height: 2500px;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 17fr 1fr;
+    grid-template-areas: 
+    "hd"
+    "ct"
+    "ft";
+    background-color: rgba(128, 128, 128, 0.136);
+}
+.header{
+    grid-area: hd;
+    background: white;
+}
+.content{
+    grid-area: ct;
+    background-color:white;
+    display: grid;
+    width: 1fr;
+    height: 100%;
+    grid-template-rows: 10%;
+    grid-template-columns: 1fr;
+    margin: 10px 150px 10px 150px;
+    grid-template-areas: "pr"
+    "pr"
+    "inf"
+    "inf"
+    "inf"
+    "inf"
+    "des"
+    "des"
+    "des"
+    "re"
+    "re";
+}
+@media(max-width:800px){
+    .content{
+        grid-area: ct;
+        background-color:white;
+        display: grid;
+        width: 1fr;
+        height: 100%;
+        grid-template-rows: 10%;
+        grid-template-columns: 1fr;
+        margin: 10px 0px 10px 0px;
+        grid-template-areas: "pr"
+        "pr"
+        "inf"
+        "inf"
+        "inf"
+        "inf"
+        "des"
+        "des"
+        "des"
+        "re"
+        "re";
+    }
+}
+.product{
+    grid-area: pr;
+    display: grid;
+    grid-template-columns: 3fr 5fr 3fr;
+    grid-template-rows: 1fr;
+    margin: 10px 10px;
+    grid-template-areas:"co1 co2 co3";
+}
+@media(max-width:800px){
+    .product{
+        grid-area: pr;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: 10px 10px;
+        grid-template-areas:"co1" 
+        "co2"
+        "co3";
+    }
+}
+.co1{
+    grid-area: co1;
+    border: solid rgba(128, 128, 128, 0.486) 3px;
+    height: 50%;
+    background-image:url("iphone-2.jpg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bx{
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#buy{
+    color: white;
+    background-color: rgb(255, 26, 26);
+    border-radius: 10%;
+    padding: 0 10px;
+    height: 50px;
+    width: 200px;
+}
+#store{
+    background-color: white;
+    border: rgb(139, 215, 236) solid 3px;
+    border-radius: 10%;
+    padding: 0 10px;
+    height: 50px;
+    width: 200px;
+}
+.co2{
+    grid-area: co2;
+    margin: 10px;
+}
+span.delivery{
+    color: gray;
+    font-size: smaller;
+}
+span{
+    color: red;
+}
+.co3{
+    grid-area: co3;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.row{
+    border: solid gray 2px;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+}
+span.shop{
+    color: red;
+    font-size: larger;
+    padding: 5px;
+}
+.information{
+    grid-area: inf;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: fit-content;
+    grid-template-areas: "infbox0 infbox0"
+    "infbox1 infbox2";
+}
+.infbox1{
+    font-style:oblique;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(209, 219, 219, 0.686);
+}
+.infbox2{
+    display: flex;
+    flex-direction: column;
+}
+.description{
+    grid-area: des;
+}
+span.des{
+    color: black;
+    font-weight: bold;
+}
+.review{
+    grid-area: re;
+    display: grid;
+    width: 100%;
+    height:100%;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: fit-content;
+    grid-template-areas:"title title"
+    "customer evalute" ;
+}
+.title{
+    grid-area: title;
+}
+.customer{
+    grid-area: customer;
+}
+.evalute{
+    grid-area: evalute;
+}
+

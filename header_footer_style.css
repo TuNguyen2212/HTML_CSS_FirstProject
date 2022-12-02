@@ -1,0 +1,107 @@
+.header{
+    display : grid;
+    width : 100%;
+    height: 100px;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0;
+    grid-template-areas:
+    "lg bar bar bar bar bar in"
+    "lg one two three four five in";
+    font-weight: 400;
+    text-align: center;
+}
+#logo{
+    grid-area: lg;
+    background-image: url("Ảnh chụp màn hình_20221101_043320.png");
+    background-size : contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#searchbar{
+    grid-area: bar;
+}
+#one{
+    grid-area: one;
+}
+#two{
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#four{
+    grid-area: four;
+}
+#five{
+    grid-area: five;
+}
+#login{
+    grid-area:in;
+
+}
+.choice{
+    text-size-adjust: auto;
+}
+.footer{
+    background-color:white;
+    font-size: medium;
+    display: grid;
+    width: 1fr;
+    height: 1fr;
+    padding: 20px 80px;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "kh kh vct vct ht ht th th"
+    "kh kh vct vct ht ht dv kn"
+    "sau sau sau sau sau sau sau sau";
+}
+.kh{
+    grid-area: kh;
+}
+.vct{
+    grid-area: vct;
+}
+.ht{
+    grid-area: ht;
+}
+.th{
+    grid-area: th;
+}
+.dv{
+    grid-area: dv;
+}
+.kn{
+    grid-area: kn;
+}
+.sau{
+    grid-area: sau;
+}
+.box{
+    width: auto;
+    height: auto;
+}
+.logo img
+{
+    border-radius: 50%;
+    max-width: 30px;
+    max-height: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.lg img
+{
+    border-radius: 30%;
+    max-width: 40px;
+    max-height: 40px;
+    margin: 5px;
+}
+.lgdv img
+{
+    border-radius: 30%;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 5px;
+}

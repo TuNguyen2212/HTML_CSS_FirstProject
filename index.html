@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout Card</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <!-- style css -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="box" id="logo"></div>
+        <div class="box" id="searchbar"></div>
+        <div class="box" id="one">Type 1</div>
+        <div class="box" id="two">Type 2</div>
+        <div class="box" id="three">Type 3</div>
+        <div class="box" id="four">Type 4</div>
+        <div class="box" id="five">Type 5</div>
+        <div class="box" id="login">
+            <label for="sign in">Menu</label>
+            <select id="color-select">
+                <option value ="" class="choice"> Home       
+                </option>
+                <option value ="" class="choice">Sign in</option>
+                <option value ="" class="choice">Sign up</option>
+            </select>
+        </div>
+    </div>
+<h2>Thông tin thanh toán</h2>
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form id="validate" action="/action_page.php">
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname"><i class="fa fa-user"></i> Họ và Tên </label>
+                        <input type="text" id="fname" name="fullname" placeholder="" required>
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="email" name="email" placeholder="" required>
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Địa chỉ</label>
+                        <input type="text" id="adr" name="address" placeholder="" required>
+                    
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">HÌNH THỨC GIAO HÀNG </label>
+                                <form>
+                                    <input type="radio" id="tietkiem" name="giaohang" value="tietkiem">
+                                    <label for="tietkiem">Giao hàng tiết kiệm</label><br>
+                                    <input type="radio" id="captoc" name="giaohang" value="captoc">
+                                    <label for="captoc">Giao hàng cấp tốc</label><br>
+                                  </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="Soeng Souy"required>
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444"required>
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="September"required>
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2021"required>
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="352"required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                </label>
+                <input type="submit" value="Continue to checkout" class="btn">
+            </form>
+        </div>
+    </div>
+    <div class="col-25">
+        <div class="container">
+            <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+            <p><a href="#">IPAD PRO M2 128GB</a> <span class="price">23.990.000đ</span></p>
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>23.990.000đ</b></span></p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="kh" class="box">
+            <h3>Hỗ trợ khách hàng</h3>
+            <p>Hotline: </p>
+            <p>Các câu hỏi thường gặp</p>
+            <p>Gửi yêu cầu hỗ trợ</p>
+            <p>Hướng dẫn đặt hàng</p>
+    </div>
+
+    <div class="vct" class="box">
+            <h3>Về chúng tôi</h3>
+            <p>Giới thiệu</p>
+            <p>Tuyển dụng</p>
+    </div>
+    
+    <div class="ht" class="box">
+            <h3>Hợp tác và liên kết</h3>
+            <p>Quy chế hoạt động</p>
+            <p>Bán hàng</p>
+    </div>
+    
+    <div class="th">
+            <h3>Phương thức thanh toán</h3>
+            <div class="lg">
+                <img src="footer\footer\momo.jpg">
+                <img src="footer\footer\jcb.jpg">
+                <img src="footer\footer\zalo pay.png">
+                <img src="footer\footer\vnpay.png">
+                <img src="footer\footer\napas.png">
+            </div>
+    </div>
+
+    <div class="dv">
+            <h3>Dịch vụ giao hàng</h3>
+            <div class="lgdv">
+                <img src="footer\footer\express.webp">
+            </div>
+    </div>
+        
+    <div class="kn">
+            <h3>Kết nối với chúng tôi</h3>
+                <div class="logo">
+                    <img src="footer\footer\free-youtube-logo-icon-2431-thumb.jpg">
+                    <img src="footer\footer\free-youtube-logo-icon-2431-thumb.jpg">
+                    <img src="footer\footer\free-youtube-logo-icon-2431-thumb.jpg">
+                </div>
+    </div>
+        
+    <div class="sau">
+            <p>Trụ sở chính: Hóc Môn, Thành phố Hồ Chí Minh</p>
+            <p>Chúng tôi nhận đặt hàng trực tuyến và giao hàng tận nơi, không hỗ trợ mua và giao hàng trực tiếp tại văn phòng hoặc trung tâm xử lý đơn hàng</p>
+            <p>@2022 - Bản quyền của ...</p>
+    </div>
+</div>
+
+<script>
+    $('#validate').validate({
+        roles: {
+            fullname: {
+                required: true,
+            },
+            email: {
+                required: true,
+            },
+            address: {
+                required: true,
+            },
+            city: {
+                required: true,
+            },
+            state: {
+                required: true,
+            },
+            zip: {
+                required: true,
+            },
+            cardname: {
+                required: true,
+            },
+            cardnumber: {
+                required: true,
+            },
+            expmonth: {
+                required: true,
+            },
+            expyear: {
+                required: true,
+            },
+            cvv: {
+                required: true,
+            },
+           
+        },
+        messages: {
+            fullname:"Please input full name*",
+            email:"Please input email*",
+            city:"Please input city*",
+            address:"Please input address*",
+            state:"Please input state*",
+            zip:"Please input address*",
+            cardname:"Please input card name*",
+            cardnumber:"Please input card number*",
+            expmonth:"Please input exp month*",
+            expyear:"Please input exp year*",
+            cvv:"Please input cvv*",
+        },
+    });
+</script>
+</body>
+</html>
